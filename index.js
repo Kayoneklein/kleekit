@@ -28,9 +28,9 @@ const express                  = require('express'),
 //      useCreateIndex:true
 //     });
 // if(process.env.NODE_ENV === "production"){
-  app.use(express.static('v1/build'));
+//   app.use(express.static('v1/build'));
 // }
-
+  app.use(express.static('v1/build'));
 
 
 app.use(cors())

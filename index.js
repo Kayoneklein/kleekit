@@ -27,10 +27,10 @@ const express                  = require('express'),
 //      useUnifiedTopology: true,
 //      useCreateIndex:true
 //     });
-// if(process.env.NODE_ENV === "production"){
-//   app.use(express.static('v1/build'));
-// }
+if(process.env.NODE_ENV==='production'){
   app.use(express.static('v1/build'));
+}
+  // app.use(express.static('v1/build'));
 
 
 app.use(cors())
@@ -65,4 +65,4 @@ passport.deserializeUser(allSchema.User.deserializeUser());
 
 
 
-app.listen(process.env.port || port, () => console.log(`connented to port ${port}`))
+app.listen(process.env.PORT || port, () => console.log(`connented to port ${port}`))

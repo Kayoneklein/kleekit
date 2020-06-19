@@ -1,5 +1,12 @@
 import React from 'react';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import axios from "axios";
+import {
+    faGooglePlusG,
+    faFacebookSquare,
+    faInstagramSquare,
+    faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 
 const home = (props) => {
@@ -14,41 +21,159 @@ const home = (props) => {
                 // backgroundColor: "black",
                 // height: "200vh",
             }}>
-          <section>
-              <div className="row">
-                  <div className="col l6">
-                  <div className="container">
-                      <div className="card card-1">
-                        <div class="card-image">
-                            <img src="img2/img1.jpg" alt="" />
-                            {/* <span class="card-title">Card Title</span> */}
-                        </div>
-                      </div>
-                        <div className="card card-2 ">
-                            <div class="card-image">
-                                <img src="img2/img2.jpg" alt="" />
-                                <span class="card-title">Card Title</span>
+          <section style={{height:'86vh'}}>
+                         <div className="row">
+                            <div className="col l6 m12">
+                            <div className="container" style={{ height: '85vh' }}>
+                                    <div className="card card-1">
+                                        <div class="card-image">
+                                            <img src="img2/img1.jpg" alt="" />
+                                            {/* <span class="card-title">Card Title</span> */}
+                                        </div>
+                                    </div>
+                                    <div className="card card-2 ">
+                                        <div class="card-image">
+                                            <img src="img2/img2.jpg" alt="" />
+                                            <span class="card-title">Card Title</span>
+                                        </div>
+                                    </div>
+                                    <div className="card card-3">
+                                        <div class="card-image">
+                                            <img src="img2/img3.jpg" alt="" />
+                                            <span class="card-title">will always care</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="card card-3">
-                            <div class="card-image">
-                                <img src="img2/img3.jpg" alt="" />
-                                <span class="card-title">will always care</span>
+                            <div className="col l6 m12">
+                                <div className="ins">
+                                    <h2 className="blue-text  text-darken-4">We bring all your picture in one frame</h2>
+                                    <h5 className="blue-text  text-darken-3">Kleekit is focused on the creation of Website, Web app, mobile applications and computer software for our clients success. We contributed to learn and refine our process as we evolve. e build affordable well tailored digital solutions for your Products and services. We are confident your business will do better with us because we provide fast delivery of all projects and give our clients nothing but the absolutebest for their business needs</h5>
+                                    <h5 className="blue-text  text-darken-3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda eos eum ipsa obcaecati quia inventore tempora nisi perspiciatis autem quae neque eveniet, voluptates, reiciendis laboriosam cupiditate blanditiis magnam minus repudiandae.</h5>
+                                    <h5 className="blue-text  text-darken-3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda eos eum ipsa obcaecati quia inventore tempora nisi perspiciatis autem quae neque eveniet, voluptates, reiciendis laboriosam cupiditate blanditiis magnam minus repudiandae.</h5>
+                                </div>
                             </div>
-                        </div>
-                  </div>
-                  </div>
-                  <div className="col l6">
-                      <div className="">
-                                <h2 className="blue-text  text-darken-4">We bring all your picture in one frame</h2>
-                                <h5 className="blue-text  text-darken-3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda eos eum ipsa obcaecati quia inventore tempora nisi perspiciatis autem quae neque eveniet, voluptates, reiciendis laboriosam cupiditate blanditiis magnam minus repudiandae.</h5>
-                                <h5 className="blue-text  text-darken-3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda eos eum ipsa obcaecati quia inventore tempora nisi perspiciatis autem quae neque eveniet, voluptates, reiciendis laboriosam cupiditate blanditiis magnam minus repudiandae.</h5>
-                                <h5 className="blue-text  text-darken-3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda eos eum ipsa obcaecati quia inventore tempora nisi perspiciatis autem quae neque eveniet, voluptates, reiciendis laboriosam cupiditate blanditiis magnam minus repudiandae.</h5>
-                      </div>
-                  </div>
-              </div>
-
+                        </div>             
           </section>
+
+          {/* our tech */}
+          <section className="our--tech">
+                    
+              <div className="container">
+                        <h3 className="indigo-text text-darken-4">What we've done.....</h3>
+                        <div className="row">
+                            <div className="col l4">
+                                <div className=""><div className="card">
+                                    <div class="card-image">
+                                        <img src="img2/img3.jpg" alt="" />
+                                        <span class="card-title">will always care</span>
+                                    </div>
+                                </div></div>
+                                <div className="">
+                                    <div className="card">
+                                        <div class="card-image">
+                                            <img src="img2/img3.jpg" alt="" />
+                                            <span class="card-title">will always care</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div className="col l8 m6 s12"><div className="card">
+                                <div class="card-image">
+                                    <img src="img2/img3.jpg" alt="" />
+                                    <span class="card-title">will always care</span>
+                                </div>
+                            </div></div>
+                            
+                            {/* <div className="col l4 m6 s12"><div className="card">
+                                <div class="card-image">
+                                    <img src="img2/img3.jpg" alt="" />
+                                    <span class="card-title">will always care</span>
+                                </div>
+                            </div></div>
+                            <div className="col l4 m6 s12"><div className="card">
+                                <div class="card-image">
+                                    <img src="img2/img3.jpg" alt="" />
+                                    <span class="card-title">will always care</span>
+                                </div>
+                            </div></div>
+                            <div className="col l4 m6 s12">
+                                <div className="card">
+                                    <div class="card-image">
+                                        <img src="img2/img3.jpg" alt="" />
+                                        <span class="card-title">will always care</span>
+                                    </div>
+                                </div>
+                            </div> */}
+                        </div>
+              </div>           
+          </section>
+
+          {/* passion section  */}
+          <section className="passion">
+              {/* <div className="row"> */}
+                  {/* <div className="col l12"> */}
+                        <div className="card" style={{margin:'0'}}>
+                        <div className="card-image" style={{ height: '45rem' }}><img src="img2/passion.jpeg" alt="" style={{ 
+                            objectFit: "cover",height: '100%'}} />
+                            <div className="card-title">
+                                <div className="row" style={{ transform: 'translate(10px, -12rem' }} >
+                                    <div className="col l6">
+                                        <span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas vel quam minus quia voluptate ex minima eaque quaerat reiciendis illo. Praesentium et necessitatibus fuga, illo itaque earum? Modi, velit molestias?</span>
+                                        <span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas vel quam minus quia voluptate ex minima eaque quaerat reiciendis illo. Praesentium et necessitatibus fuga, illo itaque earum? Modi, velit molestias?</span>
+                                    </div>
+                                    <div className="col l6" style={{ transform:'translate(10px, -12rem'}}>
+                                        <span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas vel quam minus quia voluptate ex minima eaque quaerat reiciendis illo. Praesentium et necessitatibus fuga, illo itaque earum? Modi, velit molestias?</span>
+                                        <span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas vel quam minus quia voluptate ex minima eaque quaerat reiciendis illo. Praesentium et necessitatibus fuga, illo itaque earum? Modi, velit molestias?</span>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            </div>
+                        </div>
+                  {/* </div>
+              </div> */}
+              
+          </section>
+          {/* contact footer */}
+          {/* <section className="graph">
+              <h3>graph comes here</h3>
+          </section> */}
+
+           <footer className="indigo darken-4" style={{height:'20vh'}}>
+              <div className="container">
+                        <div className="row" style={{ margin: '0' }}>
+                            <div className="col l6"></div>
+                          
+                            <div className="col l6">
+                                <h3>Contact us</h3>
+                                <div className="row">
+                                    <a href="" className="col l3 ">
+                                        <FontAwesomeIcon
+                                            icon={faFacebookSquare}
+                                            style={{ fontSize: "4rem", color: "blue" }}
+                                        />
+                                    </a>
+                               
+                                    <a href="" className="instagram col l3">
+                                        <FontAwesomeIcon
+                                            icon={faInstagramSquare}
+                                            style={{ fontSize: "4rem", color: "#b79b06" }}
+                                        />
+                                    </a>
+                                    <a href="" className="twitter col l3">
+                                        <FontAwesomeIcon
+                                            icon={faTwitter}
+                                            style={{ fontSize: "4rem" }}
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+              </div>
+              
+          </footer>
         </div>
        
         </>

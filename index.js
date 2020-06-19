@@ -27,7 +27,7 @@ const express                  = require('express'),
 //      useUnifiedTopology: true,
 //      useCreateIndex:true
 //     });
-app.use(express.static('asset'));
+// app.use(express.static('asset'));
 
 
 app.use(cors())

@@ -25,16 +25,35 @@ body {
   background-color: #dfdff3;
 }
 
+.inspiration {
+  padding-right: 1rem;
+}
 .card-1 {
-  width: 56%;
-  transform: translate(10rem, 7rem);
+  width: 60%;
+  transform: translate(10rem, 1rem);
 }
 .card-2 {
-  width: 56%;
-  transform: translate(1rem, -1rem);
+  width: 60%;
+  transform: translate(1rem, -5rem);
 }
-
 .card-3 {
-  width: 56%;
-  transform: translate(14rem, -18rem);
+  width: 60%;
+  transform: translate(20rem, -26rem);
+}
+@media only screen and (max-width: 1295px) {
+  .card-1 {
+    width: 60%;
+    transform: translate(6rem, 7rem);
+  }
+  .card-2 {
+    width: 60%;
+    transform: translate(-4rem, -2rem);
+  }
+  .card-3 {
+    width: 60%;
+    transform: translate(13rem, -17rem);
+  }
+}
+.passion .card-image span {
+  text-shadow: 0 0.2rem 0.6rem #0e0e0e;
 }

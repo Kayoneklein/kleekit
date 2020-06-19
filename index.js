@@ -27,9 +27,9 @@ const express                  = require('express'),
 //      useUnifiedTopology: true,
 //      useCreateIndex:true
 //     });
-if(process.env.NODE_ENV === "production"){
+// if(process.env.NODE_ENV === "production"){
   app.use(express.static('v1/build'));
-}
+// }
 
 
 

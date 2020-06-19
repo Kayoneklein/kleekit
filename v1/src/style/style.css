@@ -29,31 +29,128 @@ body {
   padding-right: 1rem;
 }
 .card-1 {
-  width: 60%;
-  transform: translate(10rem, 1rem);
+  width: 85%;
+  right: 1rem;
+  position: absolute;
+  /* transform: translate(10rem, 5rem); */
+  top: 3rem;
 }
 .card-2 {
-  width: 60%;
-  transform: translate(1rem, -5rem);
+  width: 73%;
+  right: 6rem;
+  position: absolute;
+  /* transform: translate(10rem, 5rem); */
+  top: 12rem;
 }
 .card-3 {
-  width: 60%;
-  transform: translate(20rem, -26rem);
+  width: 76%;
+  right: 0rem;
+  position: absolute;
+  /* transform: translate(10rem, 5rem); */
+  top: 20rem;
 }
-@media only screen and (max-width: 1295px) {
+.our--tech {
+  margin-top: 5rem;
+}
+
+@media only screen and (min-width: 1410px) {
   .card-1 {
-    width: 60%;
-    transform: translate(6rem, 7rem);
+    width: 85%;
+    right: -2rem;
+    position: absolute;
+    /* transform: translate(10rem, 5rem); */
+    top: 3rem;
   }
   .card-2 {
-    width: 60%;
-    transform: translate(-4rem, -2rem);
+    width: 73%;
+    right: 13rem;
+    position: absolute;
+    /* transform: translate(10rem, 5rem); */
+    top: 13rem;
   }
   .card-3 {
-    width: 60%;
-    transform: translate(13rem, -17rem);
+    width: 62%;
+    right: 0rem;
+    position: absolute;
+    /* transform: translate(10rem, 5rem); */
+    top: 20rem;
   }
 }
+
+@media only screen and (min-width: 860px) and (max-width: 992px) {
+  .card-1 {
+    width: 50%;
+    right: 7rem;
+    position: absolute;
+    /* transform: translate(10rem, 5rem); */
+    top: 3rem;
+  }
+  .card-2 {
+    width: 43%;
+    right: 28rem;
+    position: absolute;
+    /* transform: translate(10rem, 5rem); */
+    top: 12rem;
+  }
+  .card-3 {
+    width: 42%;
+    right: 11rem;
+    position: absolute;
+    /* transform: translate(10rem, 5rem); */
+    top: 16rem;
+  }
+  .our--tech {
+    margin-top: 5rem;
+  }
+}
+@media only screen and (min-width: 650px) and (max-width: 860px) {
+  .card-1 {
+    width: 58%;
+    right: 1rem;
+    position: absolute;
+    /* transform: translate(10rem, 5rem); */
+    top: 3rem;
+  }
+  .card-2 {
+    width: 51%;
+    right: 20rem;
+    position: absolute;
+    /* transform: translate(10rem, 5rem); */
+    top: 10rem;
+  }
+
+  .card-3 {
+    width: 48%;
+    right: 4rem;
+    position: absolute;
+    /* transform: translate(10rem, 5rem); */
+    top: 18rem;
+  }
+}
+@media only screen and (min-width: 446px) and (max-width: 650px) {
+  .card-1 {
+    width: 75%;
+    right: 1rem;
+    position: absolute;
+    /* transform: translate(10rem, 5rem); */
+    top: 3rem;
+  }
+  .card-2 {
+    width: 63%;
+    right: 10rem;
+    position: absolute;
+    /* transform: translate(10rem, 5rem); */
+    top: 12rem;
+  }
+  .card-3 {
+    width: 66%;
+    right: 0rem;
+    position: absolute;
+    /* transform: translate(10rem, 5rem); */
+    top: 17rem;
+  }
+}
+
 .passion .card-image span {
   text-shadow: 0 0.2rem 0.6rem #0e0e0e;
 }

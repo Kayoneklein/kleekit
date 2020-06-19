@@ -2,6 +2,7 @@
 import ReactDOM from "react-dom";
 import App from "./App";
 import { PersistGate } from "redux-persist/integration/react";
+import "materialize-css/dist/css/materialize.css";
 
 import { store, persistor } from "./redux/store";
 

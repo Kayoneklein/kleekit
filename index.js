@@ -27,7 +27,10 @@ const express                  = require('express'),
 //      useUnifiedTopology: true,
 //      useCreateIndex:true
 //     });
-app.use(express.static('v1/build'));
+if(process.env.NODE_ENV === "production"){
+  app.use(express.static('v1/build'));
+}
+
 
 
 app.use(cors())
@@ -53,10 +56,7 @@ app.use(express.static('assets'));
 passport.use(new localStrategy(allSchema.User.authenticate()));
 passport.serializeUser(allSchema.User.serializeUser());
 passport.deserializeUser(allSchema.User.deserializeUser());
-
-
-// app.use(auth_router);
-// app.use(update_router)  
+  
 
   app.get('*', (req, res) => {
     // res.send('Wooooooooomd')

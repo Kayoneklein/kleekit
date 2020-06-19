@@ -27,7 +27,7 @@ const express                  = require('express'),
 //      useUnifiedTopology: true,
 //      useCreateIndex:true
 //     });
-// app.use(express.static('asset'));
+app.use(express.static('v1/build'));
 
 
 app.use(cors())
@@ -56,15 +56,13 @@ passport.deserializeUser(allSchema.User.deserializeUser());
 
 
 // app.use(auth_router);
-// app.use(update_router)
-
-if(process.env.NODE_ENV ==="PRODUCTION"){
-  app.use(express.static('v1/build'));
+// app.use(update_router)  
 
   app.get('*', (req, res) => {
+    // res.send('Wooooooooomd')
     res.sendFile(path.resolve(__dirname, 'v1', 'build', 'index.html'))
   })
-}
+
 
 
 app.listen(process.env.port || port, () => console.log(`connented to port ${port}`))

@@ -59,8 +59,8 @@ passport.deserializeUser(allSchema.User.deserializeUser());
   
 
   app.get('*', (req, res) => {
-    // res.send('Wooooooooomd')
-    res.sendFile(path.resolve(__dirname, 'v1', 'build', 'index.html'))
+    res.send('Wooooooooomd')
+    // res.sendFile(path.resolve(__dirname, 'v1', 'build', 'index.html'))
   })
 
 
